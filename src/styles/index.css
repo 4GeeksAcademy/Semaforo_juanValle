@@ -9,3 +9,61 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 150px;
+  }
+  
+  .luz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #222; /* Color apagado */
+    cursor: pointer;
+  }
+  
+  .roja {
+    border: 2px solid darkred;
+  }
+  
+  .ambar {
+    border: 2px solid goldenrod;
+  }
+  
+  .verde {
+    border: 2px solid darkgreen;
+  }
+  
+  .go {
+    box-shadow: 0 0 20px 5px currentColor; /* Iluminación */
+  }
+
+  .cuidado {
+    box-shadow: 0 0 20px 5px currentColor; /* Iluminación */
+  }
+
+  .stop {
+    box-shadow: 0 0 20px 5px currentColor; /* Iluminación */
+  }
+  
+  .stop.roja {
+    background-color: red;
+    color: red; /* Para el box-shadow */
+  }
+  
+  .cuidado.ambar {
+    background-color: yellow;
+    color: yellow;
+  }
+  
+  .go.verde {
+    background-color: green;
+    color: green;
+  }
